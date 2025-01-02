@@ -1,11 +1,21 @@
 import './App.css'
+import Home from './components/home'
+import Navbar from './components/navbar'
+import Skills from './components/skills'
+import Project from './components/projects'
+import Contact from './components/contact'
+import './index.css'
+
 
 function App() {
 
   return (
     <>
-      <h1 className='text-center text-bold'>Portfolio</h1> 
-      <button>Click here</button>     
+    <Navbar />
+       <Home />
+       <Skills />
+       <Project />
+       <Contact />
     </>
   )
 }
