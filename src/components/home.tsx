@@ -1,9 +1,12 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
+import anime from "animejs";
+import Profile from '/images/profile.jpg';
 
 const typingPhrases = ["Software Developer", "UI Designer", "Graphics Designer","Web developer"];
 const Home =()=>{
     const [currentPhrase, setCurrentPhrase] = useState(0);
   const [typing, setTyping] = useState('');
+  const imageRef =useRef(null);
 
   useEffect(() => {
     let index = 0;
@@ -18,6 +21,16 @@ const Home =()=>{
         }, 2000);
       }
     }, 150);
+
+    // Floating effect for the profile image
+    anime({
+      targets: imageRef.current,
+      translateY: [
+        { value: -20, duration: 1000, easing: 'easeInOutSine' },
+        { value: 20, duration: 1000, easing: 'easeInOutSine' },
+      ],
+      loop: true, // Loop the animation indefinitely
+    });
 
     return () => clearInterval(interval);
   }, [currentPhrase]);
@@ -66,7 +79,8 @@ const Home =()=>{
   
           <div className="w-full flex items-center justify-center md:w-1/2 mt-8 md:mt-0 md:ml-8">
           <img
-            src="./src/assets/profile.jpg"
+           ref={imageRef}
+            src= {Profile}
             alt="My image"
             width={400}
             height={400}
