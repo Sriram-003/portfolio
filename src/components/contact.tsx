@@ -49,7 +49,7 @@ const Contact = () => (
   //     </div>
   //   </div>
   // </section>
-  <div className="bg-gray-900 text-white px-10 py-16">
+  <div id="contact" className="bg-gray-900 text-white px-10 py-16">
   <h1 className="text-4xl font-bold text-center mb-8 text-blue-400">Get In Touch</h1>
   
   <div className="flex flex-col items-center space-y-6">

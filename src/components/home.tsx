@@ -1,6 +1,9 @@
 import { useEffect, useRef, useState } from 'react';
 import anime from "animejs";
 import Profile from '/images/profile.jpg';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 
 const typingPhrases = ["Software Developer", "UI Designer", "Graphics Designer","Web developer"];
 const Home =()=>{
@@ -9,6 +12,7 @@ const Home =()=>{
   const imageRef =useRef(null);
 
   useEffect(() => {
+    AOS.init();
     let index = 0;
     const interval = setInterval(() => {
       setTyping(typingPhrases[currentPhrase].slice(0, index + 1));
@@ -35,26 +39,18 @@ const Home =()=>{
     return () => clearInterval(interval);
   }, [currentPhrase]);
     return(
-        // <div className='m-14 grid'>
-        //     <div className='grid-col-1'>
-        //      <h1 className="text-4xl p-20 font-bold">I'm a {typing}</h1> 
-        //      </div>
-        //      <div className='grid-cols-1 border-none rounded-xl'>
-        //      <img src={"/pro.jpg"} alt='My image' width={"300"} height={"300"}/>
-        //      </div>
-        // </div>
         <div className="min-h-screen flex items-center justify-center w-full" id='home'>
         <div className="container mx-auto p-5 flex flex-col md:flex-row items-center">
           {/* Left Side: Text */}
-          <div className="text-left w-full md:w-1/2">
-            <h1 className="text-4xl text-gray-700 font-bold  mb-4">
+          <div className="text-left text-gray-700 w-full md:w-1/2">
+            <h1 className="text-4xl font-extrabold  mb-4">
             I&apos;m a {typing}
             </h1>
-            <p className="text-gray-600 mb-6">
+            <p className="mb-6">
             Innovative and results-driven Computer Science student with apassion for creating impactful digital solutions. With a strongfoundation in full stack web development, Artificial Intelligence.Myexpertise in cutting-edge technologies like Next.js, Node.js,Firebase, and Salesforce.com enables me to tackle complexchallenges with creativity and precision.
             </p>
             {/* <button className="bg-blue-500 m-2 text-white px-4 py-2 rounded-full hover:bg-blue-600"> */}
-            <div>
+            <div data-aos='fade-right'>
             <a href="https://linkedin.com/in/sriram-v-241888242" target="_blank">
             <button>            
               <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0 0 48 48">
@@ -77,7 +73,7 @@ const Home =()=>{
              
           </div>
   
-          <div className="w-full flex items-center justify-center md:w-1/2 mt-8 md:mt-0 md:ml-8">
+          <div className="w-full flex items-center justify-center md:w-1/2 mt-8 md:mt-0 md:ml-8" data-aos="fade-bottom">
           <img
            ref={imageRef}
             src= {Profile}

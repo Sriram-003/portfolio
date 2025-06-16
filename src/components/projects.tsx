@@ -32,7 +32,7 @@ const Project = () => {
   };
 
   return (
-    <section id="projects" className="py-10 min-h-screen">
+    <section id="projects" className="py-10 min-h-screen md:py-3">
       <h2 className="text-3xl font-bold text-center mb-8">Projects</h2>
       <Swiper
         effect="coverflow"
@@ -68,6 +68,7 @@ const Project = () => {
               height: '400px',
               padding: '20px',
               transition: 'transform 0.3s, box-shadow 0.3s',
+              
             }}
             onMouseEnter={(e) => {
               e.currentTarget.style.transform = 'scale(1.05)';
