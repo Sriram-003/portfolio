@@ -12,7 +12,7 @@ import movRecImg from '/images/mov_rec.jpg';
 import aiFaceImg from '/images/ai_face.jpg';
 import bankingImg from '/images/banking.jpg';
 import cmsImg from '/images/cms.jpeg';
-// import deepfakeImg from './images/Deepfake.jpg';
+import deepfakeImg from './images/Deepfake.jpg';
 
 
 const content = {
@@ -36,38 +36,38 @@ const content = {
     ],
     projects:[
       { title: 'Deepfake Detection for Secure Online video conference',
-        image: './images/Deepfake.jpg',
+        image: deepfakeImg,
         description: 'This is a deepfake detection system for secure the video conference by idenetify the fake persons on the meetings.', 
         link: '/projects/project1' 
       },
       { title: 'Financial ChatBot',
         image: chatbotImg,
-        description: 'It is Rule based Chatbot.It give the response based on the user given input.I developed in Flask as the frontend framework.', 
+        description: 'Developed  a Deepfake detection system for secure online video conference, using Deep learning techniques. Deployed as a web browser extension for real time deepfake monitoring.', 
         link: '/projects/project1' 
       },
       { title: 'Unbeatable Ai TIC TAC TOE Game',
         image:  aiGameImg,
-        description: 'Description of project 2', 
+        description: 'Created an AI-powered Tic-Tac-Toe bot that uses a Minimax Algorithm for unbeatable gameplay.', 
         link: '/projects/project2' 
       },
       { title: 'Movie Recommendation System', 
         image:movRecImg,
-        description: 'Description of project 2', 
+        description: 'This project recommend movie name that the user search on the text box. The system suggest name by similarity of the input movie name.', 
         link: '/projects/project2' 
       },
       { title: 'Human Face detect', 
         image: aiFaceImg,
-        description: 'Description of project 2', 
+        description: 'This project detect the human face by using Haar-Cascade face detection model.', 
         link: '/projects/project2' 
       },
       { title: 'Simple banking Application', 
         image: bankingImg,
-        description: 'Description of project 2', 
+        description: 'This Java project is used for simple banking operations like Create account with password authenication, Maintain the account each user with JDBC database connectivity.', 
         link: '/projects/project2' 
       },
       { title: 'Compliant Management System', 
         image : cmsImg,
-        description: 'Description of project 2',  
+        description: 'This project is used for get the suggestion of employ, it maintain the suggestion with the sql-lite backend database. ',  
         link: '/projects/project2' 
       }
     ]
