@@ -92,7 +92,7 @@ const Project = () => {
               }}
             />
             <h3>{project.title}</h3>
-            <p style={{ fontSize: '14px', color: '#555', margin: '10px 0' }}>
+            <p style={{ fontSize: '16px', color: '#555', margin: '10px 0' }}>
               {project.description}
             </p>
           </SwiperSlide>
