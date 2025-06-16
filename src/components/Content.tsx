@@ -12,7 +12,7 @@ import movRecImg from '/images/mov_rec.jpg';
 import aiFaceImg from '/images/ai_face.jpg';
 import bankingImg from '/images/banking.jpg';
 import cmsImg from '/images/cms.jpeg';
-import deepfakeImg from './images/Deepfake.jpg';
+import deepfakeImg from '/images/Deepfake.jpg';
 
 
 const content = {
