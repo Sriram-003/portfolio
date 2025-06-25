@@ -53,7 +53,7 @@ const content = {
       { title: 'Movie Recommendation System', 
         image:movRecImg,
         description: 'This project recommend movie name that the user search on the text box. The system suggest name by similarity of the input movie name.', 
-        link: '/projects/project2' 
+        link: 'https://colab.research.google.com/drive/1cZ9XLBroz-sy4wNceiLpYsxE_CLioGg5?usp=sharing' 
       },
       { title: 'Human Face detect', 
         image: aiFaceImg,
@@ -70,6 +70,9 @@ const content = {
         description: 'This project is used for get the suggestion of employ, it maintain the suggestion with the sql-lite backend database. ',  
         link: '/projects/project2' 
       }
+    ],
+    Skills:[
+      
     ]
 }
 
