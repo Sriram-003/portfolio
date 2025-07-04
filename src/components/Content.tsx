@@ -21,7 +21,7 @@ const content = {
         link: "#home",
         icon: TbSmartHome,
       },
-      {
+      { 
         link: "#skills",
         icon: BiUser,
       },
@@ -43,12 +43,12 @@ const content = {
       { title: 'Financial ChatBot',
         image: chatbotImg,
         description: 'Developed  a Deepfake detection system for secure online video conference, using Deep learning techniques. Deployed as a web browser extension for real time deepfake monitoring.', 
-        link: '/projects/project1' 
+        link: 'https://github.com/Sriram-003/Finanical_Chatbot' 
       },
       { title: 'Unbeatable Ai TIC TAC TOE Game',
         image:  aiGameImg,
         description: 'Created an AI-powered Tic-Tac-Toe bot that uses a Minimax Algorithm for unbeatable gameplay.', 
-        link: '/projects/project2' 
+        link: 'https://www.linkedin.com/posts/sriram-v-241888242_ai-tictactoe-internship-activity-7201440247392477184-mCD2?utm_source=share&utm_medium=member_desktop&rcm=ACoAADxJP1EBtGp0MlzlFy1F-EADDn7wQ8LPOLQ' 
       },
       { title: 'Movie Recommendation System', 
         image:movRecImg,
@@ -58,17 +58,17 @@ const content = {
       { title: 'Human Face detect', 
         image: aiFaceImg,
         description: 'This project detect the human face by using Haar-Cascade face detection model.', 
-        link: '/projects/project2' 
+        link: 'https://github.com/Sriram-003/Projects' 
       },
       { title: 'Simple banking Application', 
         image: bankingImg,
         description: 'This Java project is used for simple banking operations like Create account with password authenication, Maintain the account each user with JDBC database connectivity.', 
-        link: '/projects/project2' 
+        link: 'https://github.com/Sriram-003/Projects' 
       },
       { title: 'Compliant Management System', 
         image : cmsImg,
         description: 'This project is used for get the suggestion of employ, it maintain the suggestion with the sql-lite backend database. ',  
-        link: '/projects/project2' 
+        link: 'https://github.com/Sriram-003/Projects' 
       }
     ],
     Skills:[

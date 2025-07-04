@@ -25,7 +25,7 @@ const Project = () => {
   // Detect screen size
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth <= 640); // Tailwind "sm" breakpoint
+      setIsMobile(window.innerWidth <= 640); 
     };
     handleResize();
     window.addEventListener('resize', handleResize);

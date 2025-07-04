@@ -43,11 +43,12 @@ const Home =()=>{
         <div className="container mx-auto p-5 flex flex-col md:flex-row items-center">
           {/* Left Side: Text */}
           <div className="text-left text-gray-700 w-full md:w-1/2">
-            <h1 className="text-4xl font-extrabold  mb-4">
-            I&apos;m a {typing}
+          <h1 className='text-6xl font-extrabold mb-4 sm:text-2xl'>Hi, this is SRIRAM</h1>
+            <h1 className="text-7xl font-extrabold  mb-4 sm:text-xl">
+            I&apos;m a <span className=' text-orange-600 '>{typing}</span>
             </h1>
-            <p className="mb-6">
-            Innovative and results-driven Computer Science student with apassion for creating impactful digital solutions. With a strongfoundation in full stack web development, Artificial Intelligence.Myexpertise in cutting-edge technologies like Next.js, Node.js,Firebase, and Salesforce.com enables me to tackle complexchallenges with creativity and precision.
+            <p className="text-3xl sm:text-xl mb-6">
+            Results-driven and adaptable professional with a strong foundation in problem-solving,technology, and innovation. Eager to grow in a challenging environment that fosters continuouslearning and professional development.
             </p>
             {/* <button className="bg-blue-500 m-2 text-white px-4 py-2 rounded-full hover:bg-blue-600"> */}
             <div data-aos='fade-right'>
@@ -82,6 +83,7 @@ const Home =()=>{
             height={400}
             className="rounded-3xl drop-shadow-2xl"
           />
+          
         </div>
         </div>
       </div>
