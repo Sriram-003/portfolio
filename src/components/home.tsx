@@ -43,11 +43,11 @@ const Home =()=>{
         <div className="container mx-auto p-5 flex flex-col md:flex-row items-center">
           {/* Left Side: Text */}
           <div className="text-left text-gray-700 w-full md:w-1/2">
-          <h1 className='text-6xl font-extrabold mb-4 sm:text-2xl'>Hi, this is SRIRAM</h1>
-            <h1 className="text-7xl font-extrabold  mb-4 sm:text-xl">
+          <h1 className='text-3xl font-extrabold mb-4 md:text-xl sm:text-lg'>Hi, this is SRIRAM</h1>
+            <h1 className="text-3xl font-extrabold  mb-4 md:text-xl sm:text-lg">
             I&apos;m a <span className=' text-orange-600 '>{typing}</span>
             </h1>
-            <p className="text-3xl sm:text-xl mb-6">
+            <p className="text-xl sm:text-lg mb-6">
             Results-driven and adaptable professional with a strong foundation in problem-solving,technology, and innovation. Eager to grow in a challenging environment that fosters continuouslearning and professional development.
             </p>
             {/* <button className="bg-blue-500 m-2 text-white px-4 py-2 rounded-full hover:bg-blue-600"> */}

@@ -80,7 +80,7 @@ const Skills = () => {
   }, [selectedCategory]);
 
   return (
-    <div className="min-h-screen dark:bg-black text-gray-900 dark:text-white p-8">
+    <div className="min-h-screen dark:bg-black text-gray-900 dark:text-white p-8" id='skills'>
       <h1 className="text-4xl font-bold text-center mb-10">My Skills</h1>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">

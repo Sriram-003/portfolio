@@ -2,7 +2,7 @@
 // import { MdArrowForward, MdCall } from "react-icons/md";
 // import { BsInstagram } from "react-icons/bs";
 import { TbSmartHome } from "react-icons/tb";
-import { BiUser } from "react-icons/bi";
+import { FaBookReader } from "react-icons/fa";
 import { MdPerson } from "react-icons/md";
 import {  RiProjectorLine } from "react-icons/ri";
 import { MdOutlinePermContactCalendar } from "react-icons/md";
@@ -28,7 +28,7 @@ const content = {
       },
       { 
         link: "#skills",
-        icon: BiUser,
+        icon: FaBookReader,
       },
       {
         link: "#projects",
