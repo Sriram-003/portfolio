@@ -3,6 +3,7 @@
 // import { BsInstagram } from "react-icons/bs";
 import { TbSmartHome } from "react-icons/tb";
 import { BiUser } from "react-icons/bi";
+import { MdPerson } from "react-icons/md";
 import {  RiProjectorLine } from "react-icons/ri";
 import { MdOutlinePermContactCalendar } from "react-icons/md";
 
@@ -20,6 +21,10 @@ const content = {
       {
         link: "#home",
         icon: TbSmartHome,
+      },
+      {
+        link: "#about",
+        icon: MdPerson,
       },
       { 
         link: "#skills",

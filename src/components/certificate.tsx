@@ -1,4 +1,4 @@
-import React from "react";
+
 const certificates = [
   {
     name: "AI for Everyone",

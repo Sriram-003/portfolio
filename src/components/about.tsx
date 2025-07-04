@@ -3,7 +3,7 @@ import anime from "animejs";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 AOS.init();
-
+ 
 // Timeline Data
 const educationData = [
   {
@@ -67,7 +67,7 @@ const About = () => {
   const timelineItems = activeTab === "education" ? educationData : internshipData;
 
   return (
-    <div className="min-h-screen  dark:bg-black text-gray-900 dark:text-white p-6">
+    <div className="min-h-screen  dark:bg-black text-gray-900 dark:text-white p-6" id='about'>
       {/* 👤 Intro Section */}
       <div ref={introRef} className="max-w-3xl mx-auto mb-10 text-center">
         <h1 className="text-4xl font-bold mb-3">About Me</h1>
