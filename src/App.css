@@ -1,7 +1,86 @@
 #root {
   max-width: 100%;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 1rem;
   text-align: center;
   
+}
+/* src/index.css */
+
+/* Reset defaults to eliminate hidden gaps */
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
+
+/* Ensure html and body don't force extra height */
+html, body {
+  height: auto; /* Allow natural content height */
+  min-height: 100vh; /* Ensure at least full viewport for the whole app */
+  overflow-x: hidden; /* Prevent horizontal scroll */
+  background: #f3f4f6; /* Match bg-gray-100 (Tailwind's gray-100) */
+}
+
+/* Root container for App.tsx */
+.bg-gray-100 {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensure app takes at least full viewport */
+  height: auto; /* Grow with content */
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+/* General styling for section components */
+section, div[id] {
+  width: 100%;
+  height: auto !important; /* Only as tall as content */
+  min-height: auto; /* Prevent forced minimum height */
+  padding: 20px; /* Consistent padding; adjust as needed */
+  margin: 0;
+  background: #f3f4f6; /* Match bg-gray-100 for consistency */
+}
+
+/* Remove extra space from last child in sections */
+section > *:last-child,
+div[id] > *:last-child {
+  margin-bottom: 0;
+}
+
+/* Specific tweaks for each component (adjust selectors based on your component structure) */
+#home, #about, #skills, #projects, #certificate, #contact {
+  height: auto !important; /* Override any fixed heights */
+  min-height: auto; /* Allow shrinking */
+  padding-bottom: 20px; /* Minimal padding; set to 0 if no gap needed */
+  margin-bottom: 0; /* No extra margin between sections */
+}
+
+/* Ensure images and inner content don't add gaps */
+img, .content, .card, .container {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px; /* Controlled spacing */
+}
+
+/* Remove margin from last element in sections */
+img:last-child, .content:last-child, .card:last-child, .container:last-child {
+  margin-bottom: 0;
+}
+
+/* Navbar: Ensure it doesn't interfere with content height */
+.navbar {
+  position: sticky; /* Or fixed, depending on your design */
+  top: 0;
+  z-index: 10;
+  width: 100%;
+  padding: 10px 20px;
+  margin: 0;
+}
+
+/* If using Tailwind classes in components, override potential height issues */
+.h-screen, .min-h-screen {
+  height: auto !important;
+  min-height: auto !important;
 }

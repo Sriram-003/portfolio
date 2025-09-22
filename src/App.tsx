@@ -7,6 +7,7 @@ import Project from './components/projects'
 import Contact from './components/contact'
 import './index.css'
 import About from './components/about'
+import Certificates from './components/certificate'
 
 
 function App() {
@@ -18,7 +19,7 @@ function App() {
        <About />
        <Skills />
        <Project />
-     
+     <Certificates />
        <Contact />
     </div>
   )

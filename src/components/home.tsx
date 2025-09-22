@@ -5,7 +5,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 
-const typingPhrases = ["Software Developer", "UI Designer", "Graphics Designer","Web developer"];
+const typingPhrases = ["Software Developer","Ai/ML Engineer","FullStack developer","UI/UX Designer", "Graphics Designer"];
 const Home =()=>{
     const [currentPhrase, setCurrentPhrase] = useState(0);
   const [typing, setTyping] = useState('');
@@ -31,7 +31,8 @@ const Home =()=>{
       targets: imageRef.current,
       translateY: [
         { value: -20, duration: 1000, easing: 'easeInOutSine' },
-        { value: 20, duration: 1000, easing: 'easeInOutSine' },
+        
+        { value: 20, duration: 1500, easing: 'easeInOutSine' },
       ],
       loop: true, // Loop the animation indefinitely
     });
@@ -43,8 +44,8 @@ const Home =()=>{
         <div className="container mx-auto p-5 flex flex-col md:flex-row items-center">
           {/* Left Side: Text */}
           <div className="text-left text-gray-700 w-full md:w-1/2">
-          <h1 className='text-3xl font-extrabold mb-4 md:text-xl sm:text-lg'>Hi, this is SRIRAM</h1>
-            <h1 className="text-3xl font-extrabold  mb-4 md:text-xl sm:text-lg">
+          <h1 className='text-3xl font-extrabold mb-4 md:text-2xl sm:text-lg'>Hi, this is SRIRAM</h1>
+            <h1 className="text-3xl font-extrabold  mb-4 md:text-2xl sm:text-lg">
             I&apos;m a <span className=' text-orange-600 '>{typing}</span>
             </h1>
             <p className="text-xl sm:text-lg mb-6">
@@ -70,6 +71,7 @@ const Home =()=>{
 <path fill="#ff6f00" d="M37,42H11c-2.761,0-5-2.239-5-5V11c0-2.761,2.239-5,5-5h26c2.761,0,5,2.239,5,5v26 C42,39.761,39.761,42,37,42z"></path><path fill="#fff" d="M33.5,22h-1c-0.828,0-1.5-0.672-1.5-1.5V20c0-3.866-3.134-7-7-7h-4c-3.866,0-7,3.134-7,7v8 c0,3.866,3.134,7,7,7h8c3.866,0,7-3.134,7-7v-4.5C35,22.672,34.328,22,33.5,22z M20,19h5c0.553,0,1,0.448,1,1s-0.447,1-1,1h-5 c-0.553,0-1-0.448-1-1S19.447,19,20,19z M28,29h-8c-0.553,0-1-0.448-1-1s0.447-1,1-1h8c0.553,0,1,0.448,1,1S28.553,29,28,29z"></path>
 </svg>
             </button></a> 
+            
             </div>
              
           </div>

@@ -1,5 +1,8 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef,useState } from "react";
 import anime from "animejs";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+type Category = 'Frontend' | 'Backend' | 'Program' | 'Version' | 'Design' | 'Ai';
 
 const skills = [
   {
@@ -54,12 +57,54 @@ const skills = [
 </svg>), category: "Ai" }
 ];
 
-const categories = [...new Set(skills.map((s) => s.category))];
-const Skills = () => {
-  const [selectedCategory, setSelectedCategory] = useState(null);
-  const modalRef = useRef(null);
 
-  const openCategory = (category : any) => {
+const categories: Category[] = [...new Set(skills.map((s) => s.category))] as Category[];
+
+// Category icons (SVGs for each category)
+const categoryIcons: Record<Category, JSX.Element> = {
+  Frontend: (
+    <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 24 24" fill="none">
+      <path fill="#00d8ff" d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2zm0 2v2h16V6H4zm0 4v8h16v-8H4z"/>
+      <path fill="#ffffff" d="M6 6h2v2H6V6zm10 0h2v2h-2V6z"/>
+    </svg>
+  ),
+  Backend: (
+    <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 24 24" fill="none">
+      <path fill="#00796b" d="M4 4h16v4H4V4zm0 6h16v4H4v-4zm0 6h16v4H4v-4z"/>
+      <path fill="#ffffff" d="M6 5h2v2H6V5zm0 6h2v2H6v-2zm0 6h2v2H6v-2z"/>
+    </svg>
+  ),
+  Program: (
+    <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 24 24" fill="none">
+      <path fill="#0277BD" d="M5 5h14a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2z"/>
+      <path fill="#ffffff" d="M7 9l2-2 2 2M9 7v10M13 9l-2 2 2 2"/>
+    </svg>
+  ),
+  Version: (
+    <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 24 24" fill="none">
+      <path fill="#F4511E" d="M12 3a9 9 0 0 0-9 9 9 9 0 0 0 9 9 9 9 0 0 0 9-9 9 9 0 0 0-9-9zm0 2a7 7 0 0 1 7 7 7 7 0 0 1-7 7 7 7 0 0 1-7-7 7 7 0 0 1 7-7z"/>
+      <path fill="#ffffff" d="M12 7v4l3 3"/>
+    </svg>
+  ),
+  Design: (
+    <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 24 24" fill="none">
+      <path fill="#7c4dff" d="M4 4h16v16H4V4zm2 2v12h12V6H6z"/>
+      <path fill="#ffffff" d="M8 8h2v2H8V8zm0 4h2v2H8v-2zm4 0h2v2h-2v-2zm4-4h2v2h-2V8z"/>
+    </svg>
+  ),
+  Ai: (
+    <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 24 24" fill="none">
+      <path fill="#ffa000" d="M12 4a8 8 0 0 0-8 8 8 8 0 0 0 8 8 8 8 0 0 0 8-8 8 8 0 0 0-8-8zm0 2a6 6 0 0 1 6 6 6 6 0 0 1-6 6 6 6 0 0 1-6-6 6 6 0 0 1 6-6z"/>
+      <path fill="#ffffff" d="M12 8v2m-2 2h2v2h2v-2h2v-2h-2V8z"/>
+    </svg>
+  ),
+};
+
+const Skills = () => {
+  const [selectedCategory, setSelectedCategory] = useState<Category | null>(null);
+  const modalRef = useRef<HTMLDivElement>(null);
+
+  const openCategory = (category: Category) => {
     setSelectedCategory(category);
   };
 
@@ -90,7 +135,7 @@ const Skills = () => {
             className="bg-white dark:bg-gray-800 shadow-md rounded-xl p-6 text-center cursor-pointer hover:scale-105 transition-transform"
             onClick={() => openCategory(category)}
           >
-            <div className="text-3xl mb-3">📂</div>
+            <div className="w-20 h-20 mx-auto mb-3">{categoryIcons[category]}</div>
             <h3 className="text-3xl font-semibold">{category}</h3>
           </div>
         ))}
@@ -132,6 +177,4 @@ const Skills = () => {
   );
 };
 
-
-    
 export default Skills;

@@ -1,28 +1,47 @@
 
 const certificates = [
   {
-    name: "AI for Everyone",
-    platform: "Coursera",
-    date: "March 2023",
-    link: "#", // add actual link
+    name: "Data Visualization by Accenture",
+    platform: "Forage",
+    date: "June 2024",
+    link: "#", 
   },
   {
-    name: "Full Stack Web Development",
-    platform: "Udemy",
-    date: "Jan 2023",
+    name: "Gen Ai by BCGX",
+    platform: "Forage",
+    date: "July 2024",
     link: "#",
   },
   {
-    name: "Deep Learning Specialization",
-    platform: "Coursera - Andrew Ng",
-    date: "May 2023",
+    name: "Sentiment Analysis using Python",
+    platform: "Great Learning",
+    date: "Sept 2023",
+    link: "#",
+  },
+  {
+    name: "Aritifical intelligence projects",
+    platform: "Great Learning",
+    date: "Sept 2023",
+    link: "#",
+  },
+  {
+    name: "Web Development",
+    platform: "Sololearn",
+    date: "Aug 2023",
+    link: "#",
+  },
+  {
+    name: "Figma",
+    platform: "Lets Upgrade",
+    date: "Apirl 2024",
     link: "#",
   },
 ];
 
 const Certificates = () => {
   return (
-    <div className="min-h-screen  dark:bg-black text-gray-900 dark:text-white p-6">
+    <section id='certificate'>
+      <div className="min-h-screen  dark:bg-black text-gray-900 dark:text-white p-6">
       <h1 className="text-4xl font-bold text-center mb-10">Certificates</h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
         {certificates.map((cert, index) => (
@@ -40,6 +59,8 @@ const Certificates = () => {
         ))}
       </div>
     </div>
+    </section>
+    
   );
 };
 

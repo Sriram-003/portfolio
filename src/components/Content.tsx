@@ -6,6 +6,7 @@ import { FaBookReader } from "react-icons/fa";
 import { MdPerson } from "react-icons/md";
 import {  RiProjectorLine } from "react-icons/ri";
 import { MdOutlinePermContactCalendar } from "react-icons/md";
+import { PiCertificateFill } from "react-icons/pi";
 
 import chatbotImg from '/images/chatbot1.png';
 import aiGameImg from '/images/aigame.png';
@@ -21,22 +22,32 @@ const content = {
       {
         link: "#home",
         icon: TbSmartHome,
+        name:'Home'
       },
       {
         link: "#about",
         icon: MdPerson,
+        name:'about'
       },
       { 
         link: "#skills",
         icon: FaBookReader,
+        name:'skill'
       },
       {
         link: "#projects",
         icon: RiProjectorLine,
+        name:'project'
+      },
+      {
+        link: "#certificate",
+        icon: PiCertificateFill,
+        name:'certificate'
       },
       {
         link: "#contact",
         icon: MdOutlinePermContactCalendar,
+        name:'contact'
       },
     ],
     projects:[
