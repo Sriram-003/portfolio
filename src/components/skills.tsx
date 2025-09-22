@@ -1,6 +1,6 @@
 import { useEffect, useRef,useState } from "react";
 import anime from "animejs";
-import AOS from 'aos';
+// import AOS from 'aos';
 import 'aos/dist/aos.css';
 type Category = 'Frontend' | 'Backend' | 'Program' | 'Version' | 'Design' | 'Ai';
 
